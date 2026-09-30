@@ -45,7 +45,8 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #eee;
+    /* background: #eee; */
+    padding: 1rem 0;
 
 }
 .navbar_toggle{
