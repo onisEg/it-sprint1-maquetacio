@@ -1,11 +1,13 @@
 /*
     Aquí va tu código CSS
 */
+
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
     
     --yellow:#F9995D;
+    --dark-gray:#292E3D;
 }
 
 /* reset values */
@@ -88,3 +90,20 @@ a{
     }
 
 }
+
+/* ============= Hero section ============== */
+.hero{
+    background-image: url(/src/assets/img/Hero.svg);
+    height: 90vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding:1.5rem;
+
+}
+.hero h1{
+  font-size: clamp(2rem, 8vw, 4rem);
+}
+
