@@ -1,13 +1,16 @@
-/*
-    Aquí va tu código CSS
-*/
+
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* tokens  */
 :root{
     
-    --yellow:#F9995D;
+    --orainge:#F9995D;
     --dark-gray:#292E3D;
+    --blue:#2947A9;
+    --light-blue:#A3AAC2;
+    --bg-gray:#F6F8F7;
+
 }
 
 /* reset values */
@@ -17,10 +20,14 @@
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
 }
+*,*::after,*::before{
+    box-sizing: border-box;
+}
 html{
     font-size: 100%;
 }
 body{
+    line-height: 1.5;
     min-height: 100vh;
 }
 
@@ -28,6 +35,11 @@ a{
     max-width: inherit;
     text-decoration: none;
 }
+img,svg{
+    display: block;
+    max-width: 100%;
+}
+ul[class]{list-style: none;}
 .container{
     width: 90%;
 
@@ -41,7 +53,7 @@ a{
 /* =============================== */
 
 
-.navbar{
+header{
     width: 90%;
     margin-inline: auto;
     display: flex;
@@ -70,8 +82,8 @@ a{
     color: black;
 
 }
-.navbar_list a .span{
-    color: var(--yellow);
+.navbar_list a span{
+    color: var(--orainge);
 }
 
 #menu-toggle:checked ~ .navbar_list{

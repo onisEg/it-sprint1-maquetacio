@@ -5,7 +5,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The Box</title>
-  <link rel="shortcut icon" href="/src/assets/img/fivicon.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="/src/assets/icons/fivicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <link rel="stylesheet" href="/src/css/style.css">
   <!-- Aquí likeas tu html con tu css -->
 </head>
@@ -13,28 +14,177 @@
 <body>
   <!-- Aquí va tu esqueleto HTML -->
 
-
-  <!-- Navbar section -->
-  <nav class="navbar" aria-label="Main navigation">
+  <header class="site-header">
+    <!-- logo -->
     <a href="/"><img src="/src/assets/img/logo.svg" alt="logoTheBox"></a>
+    <!-- Navbar section -->
+    <nav class="navbar" aria-label="Main navigation">
+      <button for="menu-toggle" class="navbar_toggle" type="button" aria-label="Open navigation menu">
+        ☰
+      </button>
+      <ul class="navbar_list">
+        <li> <a href="#">Home</a> </li>
+        <li> <a href="#">Our Reputation</a></li>
+        <li> <a href="#">Services</a> </li>
+        <li> <a href="#"><span>Contact Us</span> </a> </li>
+      </ul>
+    </nav>
+  </header>
 
-    <button for="menu-toggle" class="navbar_toggle" type="button" aria-label="Open navigation menu">
-      ☰
-    </button>
-    <ul class="navbar_list">
-      <li> <a href="#">Home</a> </li>
-      <li> <a href="#">Our Reputation</a></li>
-      <li> <a href="#">Services</a> </li>
-      <li> <a href="#"><span class="span">Contact Us</span> </a> </li>
-    </ul>
-  </nav>
+  <main id="main">
 
-  <!-- Hero section  -->
-  <section class="hero">
-    <div class="hero_content">
+    <!-- Hero section  -->
+    <section class="hero">
       <h1>Building things is our mission.</h1>
-    </div>
-  </section>
+      </div>
+    </section>
+
+    <!-- Our Reputation -->
+    <section class="repution" id="repution" aria-labelledby="reputation-title">
+      <h2 id="reputation-title">Our Reputation</h2>
+      <ul>
+        <!-- 1 -->
+        <li>
+          <article class="card">
+            <img src="/src/assets/icons/iconTeams.svg" alt="">
+            <h3>Best Services</h3>
+            <p>Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
+          </article>
+        </li>
+        <!-- 2 -->
+        <li>
+          <article class="card">
+            <img src="/src/assets/icons/iconDesign.svg" alt="">
+            <h3>Best Designs</h3>
+            <p>Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
+          </article>
+        </li>
+        <!-- 3 -->
+        <li>
+          <article class="card">
+            <img src="/src/assets/icons/iconTeams.svg" alt="">
+            <h3>Best Teams</h3>
+            <p>Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services" aria-labelledby="services-title">
+      <h2 id="services-title">Services</h2>
+      <ul class="service-grid">
+        <li>
+          <article class="service-card">
+            <img src="/src/assets/icons/iconCon.svg" alt="Construction">
+            <div class="line"></div>
+            <h3>Construction</h3>
+          </article>
+        </li>
+        <li>
+          <article class="service-card-featured">
+            <img src="/src/assets/icons/iconRenovation.svg" alt="Renovation">
+            <div class="line"></div>
+            <h3>Renovation</h3>
+          </article>
+        </li>
+        <li>
+          <article class="service-card">
+            <img src="/src/assets/icons/iconCon.svg" alt="Construction">
+            <div class="line"></div>
+            <h3>Construction</h3>
+          </article>
+        </li>
+        <li>
+          <article class="service-card-featured">
+            <img src="/src/assets/icons/iconRenovation.svg" alt="Renovation">
+            <div class="line"></div>
+            <h3>Renovation</h3>
+          </article>
+        </li>
+        <li>
+          <article class="service-card">
+            <img src="/src/assets/icons/iconCon.svg" alt="Construction">
+            <div class="line"></div>
+            <h3>Construction</h3>
+          </article>
+        </li>
+        <li>
+          <article class="service-card-featured">
+            <img src="/src/assets/icons/iconRenovation.svg" alt="Renovation">
+            <div class="line"></div>
+            <h3>Renovation</h3>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!-- contact us  -->
+    <section class="constact" id="contact" aria-labelledby="contact" aria-labelledby="contact title">
+      <h2 id="contact-title">Contact-Us</h2>
+      <p>We are ready to work on a project of any complexity, whether it’s commercial or residential.</p>
+
+      <!-- form -->
+      <form>
+
+        <div class="field">
+          <label for="Name">Your Name <span aria-hidden="true">*</span></label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+
+        <div class="field">
+          <label for="Name">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+
+        <div class="field">
+          <label for="country">Country</label>
+          <select name="country" id="country">
+            <option value="">Select a country</option>
+            <option value="es">Spain</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="Name">Phone</label>
+          <input type="tel" id="phone" name="phone" required autocomplete="phone">
+        </div>
+
+        <div class="field field-full">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="5"></textarea>
+        </div>
+        <p class="form-note">* indicates a required field</p>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <ul class="footer">
+      <li>
+        <article>
+          <ul>
+            <li><span>Address: </span>6391 Elgin St. Celina, Delaware 10299 </li>
+            <li><span>Phone: </span>+84 1102 2703</li>
+            <li><span>Email: </span>hello@thebox.com </li>
+          </ul>
+        </article>
+      </li>
+      <li>
+        <article>
+          <ul>
+            <li><span>Address: </span>6391 Elgin St. Celina, Delaware 10299 </li>
+            <li><span>Phone: </span>+84 1102 2703</li>
+            <li><span>Email: </span>hello@thebox.com </li>
+          </ul>
+        </article>
+      </li>
+    </ul>
+
+  </footer>
+
 
 </body>
 
