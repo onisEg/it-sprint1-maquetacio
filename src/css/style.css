@@ -113,8 +113,6 @@ section {
       }
     }
 
-    ul {
-    }
   }
 }
 .site-header nav ul {
@@ -141,7 +139,7 @@ section {
 
 .hero {
   display: grid;
-  background-image: url("/src/assets/img/Hero.svg");
+  background-image: url("src/assets/img/Hero.svg");
   background-size: cover;
   background-position: center center;
   min-height: clamp(20rem, 50vh, 35rem);
