@@ -20,9 +20,11 @@
       <a href="/"><img src="src/assets/img/logo.svg" alt="logoTheBox"></a>
       <!-- Navbar section -->
       <nav class="navbar" aria-label="Main navigation">
-        <button for="menu-toggle" class="navbar_toggle" type="button" aria-label="Open navigation menu">
+        <button class="navbar_toggle" type="button" aria-expanded="false" aria-controls="main-menu"
+          aria-label="Open navigation menu">
           ☰
         </button>
+
         <ul class="navbar_list">
           <li> <a href="#">Home</a> </li>
           <li> <a href="#">Our Reputation</a></li>
@@ -45,7 +47,7 @@
     <!-- Our Reputation -->
     <section class="repution " id="repution" aria-labelledby="reputation-title">
       <div class="container">
-        <h2 id="reputation-title section-title">Our Reputation</h2>
+        <h2 class="section-title" >Our Reputation</h2>
         <ul class="cards">
           <!-- 1 -->
           <li>
@@ -78,7 +80,8 @@
     <!-- Services -->
     <section class="service " id="services" aria-labelledby="services-title">
       <div class="container">
-        <h2 id="service-title section-title">Services</h2>
+        <h2 id="service-title" class="section-title">Services</h2>
+
         <ul class="service-grid">
           <li>
             <article class="service-card">
@@ -96,30 +99,30 @@
           </li>
           <li>
             <article class="service-card">
-              <img src="src/assets/icons/iconCon.svg" alt="Construction">
+              <img src="src/assets/icons/iconConsultation.svg" alt="Construction">
               <div class="line"></div>
-              <h3>Construction</h3>
+              <h3>Consultation</h3>
             </article>
           </li>
           <li>
             <article class="service-card-featured">
-              <img src="src/assets/icons/iconRenovation.svg" alt="Renovation">
+              <img src="src/assets/icons/iconRepair.svg" alt="Renovation">
               <div class="line"></div>
-              <h3>Renovation</h3>
+              <h3>Repair Services</h3>
             </article>
           </li>
           <li>
             <article class="service-card">
-              <img src="src/assets/icons/iconCon.svg" alt="Construction">
+              <img src="src/assets/icons/iconArchitecture.svg" alt="Construction">
               <div class="line"></div>
-              <h3>Construction</h3>
+              <h3>Architecture</h3>
             </article>
           </li>
           <li>
             <article class="service-card-featured">
-              <img src="src/assets/icons/iconRenovation.svg" alt="Renovation">
+              <img src="src/assets/icons/iconElectric.svg" alt="Renovation">
               <div class="line"></div>
-              <h3>Renovation</h3>
+              <h3>Electric</h3>
             </article>
           </li>
         </ul>
@@ -129,7 +132,7 @@
     <!-- contact us  -->
     <section class="contact " id="contact" aria-labelledby="contact" aria-labelledby="contact title">
       <div class="container">
-        <h2 id="contact-title section-title">Contact us</h2>
+        <h2 id="contact-title" class="section-title">Contact us</h2>
         <p>We are ready to work on a project of any complexity, whether it’s commercial or residential.</p>
         <!-- form -->
         <form>
