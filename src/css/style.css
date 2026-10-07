@@ -9,7 +9,9 @@
   --bg-gray: #f6f8f7;
   --gray-100: #e0e3eb;
   --gray-200: ##3152ad;
+  --gary-900:#14171F;
   --placeholder: #a3aac2;
+
 
   /* layout */
   --container: 75rem;
@@ -92,20 +94,45 @@ section {
     color: #252b36;
   }
 }
-/* =============================== */
+/* ========= header ====================== */
 .site-header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+
+  padding: var(--space-2) 0;
+
+  .navbar {
+    button {
+      border: none;
+      font-size: x-large;
+      background-color: transparent;
+      cursor: pointer;
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    ul {
+    }
+  }
 }
 .site-header nav ul {
   display: flex;
   list-style: none;
-  gap: var(--space-4);
-}
-@media (min-width: 768px) {
-  .site-header nav ul {
+  gap: var(--space-2);
+
+  li {
+    a {
+      color: var(--gary-900);
+      span{
+        color:var(--bg-orainge);
+      }
+    }
+    
+  }
+
+  @media (max-width: 768px) {
     display: none;
   }
 }
@@ -147,6 +174,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
     gap: var(--space-3);
+    
   }
   .service-card,
   .service-card-featured {
@@ -172,6 +200,7 @@ section {
     height: 3px;
     background-color: var(--gray-100);
   }
+  
 }
 
 /* contact */
@@ -311,15 +340,11 @@ footer .container {
     }
     .footer-logo {
       margin-top: var(--space-3);
-      img {
-        width: 9rem;
-      }
     }
   }
 
   .footer-right {
     display: grid;
-    
 
     h2 {
       margin-bottom: var(--space-2);
@@ -358,8 +383,8 @@ footer .container {
         }
       }
     }
-    .social{
-        padding: 2rem 0;
+    .social {
+      padding: 2rem 0;
     }
     .social-list {
       display: flex;
@@ -372,11 +397,10 @@ footer .container {
 }
 
 /* footer bottom */
-.footer-bottom{
-    background-color: var(--blue);
-    color: white;
-    .container{
-        padding: 1rem;
-       
-    }
+.footer-bottom {
+  background-color: var(--blue);
+  color: white;
+  .container {
+    padding: 1rem;
+  }
 }
