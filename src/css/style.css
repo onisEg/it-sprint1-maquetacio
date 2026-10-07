@@ -9,9 +9,8 @@
   --bg-gray: #f6f8f7;
   --gray-100: #e0e3eb;
   --gray-200: ##3152ad;
-  --gary-900:#14171F;
+  --gary-900: #14171f;
   --placeholder: #a3aac2;
-
 
   /* layout */
   --container: 75rem;
@@ -125,11 +124,10 @@ section {
   li {
     a {
       color: var(--gary-900);
-      span{
-        color:var(--bg-orainge);
+      span {
+        color: var(--bg-orainge);
       }
     }
-    
   }
 
   @media (max-width: 768px) {
@@ -141,7 +139,7 @@ section {
 
 .hero {
   display: grid;
-  background-image: url("/src/assets/img/Hero.svg");
+  background-image: url("src/assets/img/hero.svg");
   background-size: cover;
   background-position: center center;
   min-height: clamp(20rem, 50vh, 35rem);
@@ -174,7 +172,6 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
     gap: var(--space-3);
-    
   }
   .service-card,
   .service-card-featured {
@@ -200,7 +197,6 @@ section {
     height: 3px;
     background-color: var(--gray-100);
   }
-  
 }
 
 /* contact */
