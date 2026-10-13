@@ -2,15 +2,15 @@
 
 /* tokens  */
 :root {
-  --bg-orainge: #f9995d;
+  --bg-orange: #f9995d;
   --dark-gray: #292e3d;
   --blue: #2947a9;
   --light-blue: #a3aac2;
   --bg-gray: #f6f8f7;
   --gray-100: #e0e3eb;
-  --gray-200: ##3152ad;
-  --gary-900: #14171f;
-  --placeholder: #a3aac2;
+  --gray-200: #3152ad;
+  --gray-900: #14171f;
+  --placeholder-color: #cfbcbc;
 
   /* layout */
   --container: 75rem;
@@ -120,9 +120,9 @@ section {
 
   li {
     a {
-      color: var(--gary-900);
+      color: var(--gray-900);
       span {
-        color: var(--bg-orainge);
+        color: var(--bg-orange);
       }
     }
   }
@@ -138,7 +138,7 @@ section {
   display: grid;
   background-image: url(../assets/img/hero.svg);
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   min-height: clamp(20rem, 50vh, 35rem);
   align-content: center;
 }
@@ -169,16 +169,16 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
     gap: var(--space-3);
-  }
-  .service-card,
-  .service-card-featured {
-    display: flex;
-    flex-direction: column;
-    padding: var(--space-3);
-    gap: var(--space-2);
-    border-radius: 0.5rem;
-    img {
-      width: 40px;
+    .service-card,
+    .service-card-featured {
+      display: flex;
+      flex-direction: column;
+      padding: var(--space-3);
+      gap: var(--space-2);
+      border-radius: 0.5rem;
+      img {
+        width: 40px;
+      }
     }
   }
   .service-card {
@@ -191,7 +191,7 @@ section {
   }
   .line {
     width: clamp(2rem, 4vw, 5rem);
-    height: 3px;
+    height: 2px;
     background-color: var(--gray-100);
   }
 }
@@ -239,9 +239,8 @@ section {
         height: 44px;
         padding: 0 0.75rem;
         resize: vertical;
-        ::placeholder {
-          color: var(--gray-100);
-          opacity: 1;
+        &::placeholder {
+          color: var(--placeholder-color);
         }
       }
       input,
@@ -255,18 +254,19 @@ section {
         color: var(--dark-gray);
         font: inherit;
         font-size: 0.85rem;
-        ::placeholder {
-          color: var(--gray-100);
+        border-radius: 5px;
+        &::placeholder {
+          color: var(--placeholder-color);
           opacity: 1;
         }
-        :focus {
-          border-color: var(--gray-200);
-          box-shadow: 0 0 0 2px rgba(49, 82, 173, 0.08);
+        &:focus {
+          border-color: var(--blue);
+          box-shadow: 0 0 0 2px rgb(41 71 169 / 0.12);
         }
       }
-      .field-full {
-        grid-column: 1 / -1;
-      }
+    }
+    .field-full {
+      grid-column: 1 / -1;
     }
     .form-note {
       margin: -0.01rem 0 0;
@@ -284,10 +284,10 @@ section {
       font-weight: 600;
       font-size: 0.9rem;
       cursor: pointer;
-      :hover {
-        background: var(--bg-orainge);
+      &:hover {
+        background: var(--bg-orange);
       }
-      :active {
+      &:active {
         transform: translateY(1px);
       }
     }
@@ -339,7 +339,7 @@ footer .container {
   .footer-right {
     display: grid;
 
-    h2 {
+    h3 {
       margin-bottom: var(--space-2);
       color: var(--blue);
       text-align: start;
@@ -357,20 +357,20 @@ footer .container {
           border-radius: 4px;
           font-size: 1rem;
           border: 1px solid var(--gray-100);
-          ::placeholder {
-            color: var(--placeholder);
+          &::placeholder {
+            color: var(--placeholder-color-);
           }
         }
         button {
           flex-shrink: 0;
           min-width: 7rem;
           height: 44px;
-          background: var(--bg-orainge);
+          background: var(--bg-orange);
           color: white;
           cursor: pointer;
           border-radius: 4px;
           border: 0;
-          :hover {
+          &:hover {
             background-color: orange;
           }
         }
