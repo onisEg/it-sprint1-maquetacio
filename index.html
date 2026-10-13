@@ -19,7 +19,7 @@
       <!-- logo -->
       <a href="/"><img src="src/assets/img/logo.svg" alt="logoTheBox"></a>
       <!-- Navbar section -->
-      <nav class="navbar" aria-label="Main navigation">
+      <nav class="navbar">
         <button class="navbar_toggle" type="button" aria-expanded="false" aria-controls="main-menu"
           aria-label="Open navigation menu">
           ☰
@@ -27,7 +27,7 @@
 
         <ul class="navbar_list">
           <li> <a href="#">Home</a> </li>
-          <li> <a href="#">Our Reputation</a></li>
+          <li> <a href="#">Our Repution</a></li>
           <li> <a href="#">Services</a> </li>
           <li> <a href="#"><span>Contact Us</span> </a> </li>
         </ul>
@@ -37,16 +37,16 @@
 
   <main id="main">
     <!-- Hero section  -->
-    <section class="hero" style="background-image: url(./src/assets/img/hero.svg);">
+    <section class="hero">
       <div class="container">
         <h1>Building things is our mission.</h1>
       </div>
     </section>
 
-    <!-- Our Reputation -->
-    <section class="repution " id="repution" aria-labelledby="reputation-title">
+    <!-- Our Repution -->
+    <section class="repution " id="repution">
       <div class="container">
-        <h2 class="section-title">Our Reputation</h2>
+        <h2 class="section-title">Our Repution</h2>
         <ul class="cards">
           <!-- 1 -->
           <li>
@@ -77,9 +77,9 @@
     </section>
 
     <!-- Services -->
-    <section class="service " id="services" aria-labelledby="services-title">
+    <section class="service " id="services">
       <div class="container">
-        <h2 id="service-title" class="section-title">Services</h2>
+        <h2 class="section-title">Services</h2>
 
         <ul class="service-grid">
           <li>
@@ -98,28 +98,28 @@
           </li>
           <li>
             <article class="service-card">
-              <img src="src/assets/icons/iconConsultation.svg" alt="Construction">
+              <img src="src/assets/icons/iconConsultation.svg" alt="Consultation">
               <div class="line"></div>
               <h3>Consultation</h3>
             </article>
           </li>
           <li>
             <article class="service-card-featured">
-              <img src="src/assets/icons/iconRepair.svg" alt="Renovation">
+              <img src="src/assets/icons/iconRepair.svg" alt="Repair Services">
               <div class="line"></div>
               <h3>Repair Services</h3>
             </article>
           </li>
           <li>
             <article class="service-card">
-              <img src="src/assets/icons/iconArchitecture.svg" alt="Construction">
+              <img src="src/assets/icons/iconArchitecture.svg" alt="Architecture">
               <div class="line"></div>
               <h3>Architecture</h3>
             </article>
           </li>
           <li>
             <article class="service-card-featured">
-              <img src="src/assets/icons/iconElectric.svg" alt="Renovation">
+              <img src="src/assets/icons/iconElectric.svg" alt="Electric">
               <div class="line"></div>
               <h3>Electric</h3>
             </article>
@@ -129,39 +129,41 @@
     </section>
 
     <!-- contact us  -->
-    <section class="contact " id="contact" aria-labelledby="contact" aria-labelledby="contact title">
+    <section class="contact " id="contact">
       <div class="container">
-        <h2 id="contact-title" class="section-title">Contact us</h2>
+        <h2 class="section-title">Contact us</h2>
         <p>We are ready to work on a project of any complexity, whether it’s commercial or residential.</p>
         <!-- form -->
         <form>
 
           <div class="field">
-            <label for="Name">Your Name <span aria-hidden="true">*</span></label>
-            <input placeholder="Your Name*" type="text" id="name" name="name" required autocomplete="name">
+            <input placeholder="Name *" id="name" type="text" required autocomplete="name">
+            <label for="name">Your Name *</label>
           </div>
 
           <div class="field">
-            <label for="Email">Email</label>
-            <input placeholder="Email *" type="email" id="email" name="email" required autocomplete="email">
+            <input placeholder="Email *" type="email" id="email" name="email" required autocomplete="email"
+              aria-label="email">
+            <label for="email">Email</label>
           </div>
 
           <div class="field">
-            <label for="country">Country</label>
             <select name="country" id="country">
               <option value="">Select a country</option>
               <option value="es">Spain</option>
             </select>
+            <label for="country">Country</label>
           </div>
 
           <div class="field">
+            <input placeholder="Phone" type="tel" id="phone" name="phone" required autocomplete="phone"
+              aria-label="phone">
             <label for="phone">Phone</label>
-            <input placeholder="Phone" type="tel" id="phone" name="phone" required autocomplete="phone">
           </div>
 
           <div class="field field-full">
+            <textarea placeholder="Message" name="message" id="message" rows="5" aria-label="message"></textarea>
             <label for="message">Message</label>
-            <textarea placeholder="Message" name="message" id="message" rows="5"></textarea>
           </div>
           <p class="form-note">* indicates a required field</p>
           <button type="submit">Submit</button>
@@ -181,35 +183,35 @@
           <li><span>Email: </span>hello@thebox.com </li>
         </ul>
         <a class="footer-logo" href="/" aria-label="thebox home">
-          <img class="footer-logo" src="src/assets/img/logo.svg" alt="TheBox">
+          <img class="footer-logo" src="src/assets/img/logo.svg" alt="site logo">
         </a>
       </section>
 
       <section class="footer-right">
         <div class="newsletter">
-          <h2>Newsletter:</h2>
+          <h3>Newsletter:</h3>
           <form action="">
             <input type="email" id="Newsletter" name="email" placeholder="Your email here" autocomplete="email"
-              required>
+              aria-label="email" required>
             <button submit>Subscribe</button>
           </form>
         </div>
 
         <div class="social">
-          <h2>social:</h2>
+          <h3>social:</h3>
           <ul class="social-list">
             <li>
-              <a href="#" aria-label="facebook">
-                <img class="fa-brands" src="src/assets/icons/facebook-icon.svg" alt="facebook">
+              <a href="#" aria-label="facebook-icon">
+                <img class="fa-brands" src="src/assets/icons/facebook-icon.svg" alt="facebook icon">
               </a>
             </li>
             <li>
-              <a href="#" aria-label="linkedin">
+              <a href="#" aria-label="linkedin-icon">
                 <img class="fa-brands" src="src/assets/icons/linkedin-icon.svg" alt="linkedin">
               </a>
             </li>
             <li>
-              <a href="#" aria-label="x">
+              <a href="#" aria-label="x-icon">
                 <img class="fa-brands" src="src/assets/icons/x-icon.svg" alt="x-icon">
               </a>
             </li>
