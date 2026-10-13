@@ -15,7 +15,7 @@ semantic HTML, and a mobile-first approach, without any CSS framework.
 
 ## Preview
 
-![Project preview](src/assets/img/preview.png)
+![Project preview](src/assets/img/logo.svg)
 
 ## Project Structure
 
